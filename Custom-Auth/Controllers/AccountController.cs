@@ -8,10 +8,7 @@ namespace Custom_Auth.Web.Controllers
 {
     public class AccountController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
+        public ActionResult Index() => View();
 
         [HttpPost]
         public ActionResult Login(AccountViewModel avm)
@@ -20,13 +17,11 @@ namespace Custom_Auth.Web.Controllers
 
             if(String.IsNullOrEmpty(account.UserName) || String.IsNullOrEmpty(account.Password))
             {
-                ViewBag.Error = "User or Password invalid";
+                ViewBag.Error = "User or Password invalid¹";
                 return View("Index");
             }
 
-            AccountModel accountM = new AccountModel();
-
-            if (!accountM.IsAuthenticable(account.UserName, account.Password))
+            if (!new AccountModel().IsAuthenticable(account.UserName, account.Password))
             {
                 ViewBag.Error = "User or Password invalid²";
                 return View("Index");

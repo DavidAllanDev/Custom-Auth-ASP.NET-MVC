@@ -6,27 +6,15 @@ namespace Custom_Auth.Web.Controllers
     public class DemoController : Controller
     {
         [AllowAnonymous]
-        public ActionResult Index()
-        {
-            return View();
-        }
+        public ActionResult Index() => View();
 
         [CustomAuthorize(Roles = "root")]
-        public ActionResult Work1()
-        {
-            return View("Work1");
-        }
+        public ActionResult Work1() => View("Work1");
 
         [CustomAuthorize(Roles = "root,sudo")]
-        public ActionResult Work2()
-        {
-            return View("Work2");
-        }
+        public ActionResult Work2() => View("Work2");
 
         [CustomAuthorize(Roles = "root,sudo,sa")]
-        public ActionResult Work3()
-        {
-            return View("Work3");
-        }
+        public ActionResult Work3() => View("Work3");
     }
 }

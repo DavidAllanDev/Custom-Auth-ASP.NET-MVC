@@ -35,14 +35,8 @@ namespace Custom_Auth.Web.Models
                          );
         }
 
-        public Account FindByUserName(string userName)
-        {
-            return _accounts.Single(a => a.UserName.Equals(userName));
-        }
+        public Account FindByUserName(string userName) => _accounts.Single(a => a.UserName.Equals(userName));
 
-        public bool IsAuthenticable(string userName, string password)
-        {
-            return _accounts.Find(A => A.UserName.Equals(userName) && A.Password.Equals(password)) != null;
-        }
+        public bool IsAuthenticable(string userName, string password) => _accounts.Find(A => A.UserName.Equals(userName) && A.Password.Equals(password)) != null;
     }
 }

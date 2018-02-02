@@ -18,10 +18,7 @@ namespace Custom_Auth.Web.Security
                 return null;
             }
 
-            set
-            {
-                HttpContext.Current.Session[usernameSessionvar] = value;
-            }
+            set => HttpContext.Current.Session[usernameSessionvar] = value;
         }
 
     }
