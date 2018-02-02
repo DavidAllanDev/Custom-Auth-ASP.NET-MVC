@@ -16,8 +16,16 @@ namespace Custom_Auth.Web.Models
                             new Account() {
                                             UserName = "User",
                                             Password = "xXx",
-                                            Roles = new string[] {"root","sudo","sa", "user"}
+                                            Roles = new string[] {"sa", "user"}
                                           }
+                         );
+            _accounts.Add(
+                            new Account()
+                            {
+                                UserName = "sasa",
+                                Password = "xXx",
+                                Roles = new string[] {"sudo", "sa" }
+                            }
                          );
             _accounts.Add(
                             new Account()
