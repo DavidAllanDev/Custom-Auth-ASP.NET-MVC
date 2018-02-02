@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Custom_Auth.Web.Models;
 using Custom_Auth.Web.ViewModels;
+using Custom_Auth.Web.Security;
 
 namespace Custom_Auth.Web.Controllers
 {
@@ -34,7 +35,15 @@ namespace Custom_Auth.Web.Controllers
                 return View("Index");
             }
 
+            SessionPersister.Username = account.UserName;
+
             return View("Success");
+        }
+
+        public ActionResult Logout()
+        {
+            SessionPersister.Username = string.Empty;
+            return RedirectToAction("Index");
         }
     }
 }
