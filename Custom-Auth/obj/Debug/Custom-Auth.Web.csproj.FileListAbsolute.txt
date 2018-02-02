@@ -39,4 +39,3 @@ C:\Users\Developer\Documents\GitHub\Custom-Auth-ASP.NET-MVC\Custom-Auth\bin\Micr
 C:\Users\Developer\Documents\GitHub\Custom-Auth-ASP.NET-MVC\Custom-Auth\obj\Debug\Custom-Auth.Web.csproj.CoreCompileInputs.cache
 C:\Users\Developer\Documents\GitHub\Custom-Auth-ASP.NET-MVC\Custom-Auth\obj\Debug\Custom-Auth.Web.dll
 C:\Users\Developer\Documents\GitHub\Custom-Auth-ASP.NET-MVC\Custom-Auth\obj\Debug\Custom-Auth.Web.pdb
-C:\Users\Developer\Documents\GitHub\Custom-Auth-ASP.NET-MVC\Custom-Auth\obj\Debug\Custom-Auth.Web.csprojResolveAssemblyReference.cache
