@@ -1,4 +1,4 @@
-﻿using Custom_Auth.Web.Models;
+﻿using Custom_Auth.Domain.Model;
 
 namespace Custom_Auth.Web.ViewModels
 {

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom-Auth.Web", "Custom-A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom-Auth.Security", "Custom-Auth.Security\Custom-Auth.Security.csproj", "{970791C9-7209-4807-9A5B-EEB5D59B333E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom-Auth.Domain", "Custom-Auth.Domain\Custom-Auth.Domain.csproj", "{54194405-4948-4F26-8022-CE90C45E4609}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{970791C9-7209-4807-9A5B-EEB5D59B333E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970791C9-7209-4807-9A5B-EEB5D59B333E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970791C9-7209-4807-9A5B-EEB5D59B333E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54194405-4948-4F26-8022-CE90C45E4609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54194405-4948-4F26-8022-CE90C45E4609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54194405-4948-4F26-8022-CE90C45E4609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54194405-4948-4F26-8022-CE90C45E4609}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

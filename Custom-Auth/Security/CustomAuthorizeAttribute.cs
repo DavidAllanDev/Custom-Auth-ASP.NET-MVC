@@ -1,7 +1,7 @@
 ﻿using System.Web.Routing;
 using System.Web.Mvc;
-using Custom_Auth.Web.Models;
 using Custom_Auth.Security.Web;
+using Custom_Auth.Domain.Model;
 
 namespace Custom_Auth.Web.Security
 {

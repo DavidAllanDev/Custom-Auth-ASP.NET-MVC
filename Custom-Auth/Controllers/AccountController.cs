@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
-using Custom_Auth.Web.Models;
+using Custom_Auth.Domain.Model;
 using Custom_Auth.Web.ViewModels;
 using Custom_Auth.Security.Web;
 

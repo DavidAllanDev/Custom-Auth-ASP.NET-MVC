@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Custom_Auth.Security.ModelInterface;
 
-namespace Custom_Auth.Web.Models
+namespace Custom_Auth.Domain.Model
 {
     public class Account : IAccount
     {

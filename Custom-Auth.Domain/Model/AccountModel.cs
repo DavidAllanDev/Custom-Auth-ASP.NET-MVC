@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Custom_Auth.Web.Models
+namespace Custom_Auth.Domain.Model
 {
     public class AccountModel
     {
@@ -11,18 +14,19 @@ namespace Custom_Auth.Web.Models
         {
             _accounts = new List<Account>() { };
             _accounts.Add(
-                            new Account() {
-                                            UserName = "User",
-                                            Password = "xXx",
-                                            Roles = new string[] {"sa", "user"}
-                                          }
+                            new Account()
+                            {
+                                UserName = "User",
+                                Password = "xXx",
+                                Roles = new string[] { "sa", "user" }
+                            }
                          );
             _accounts.Add(
                             new Account()
                             {
                                 UserName = "sasa",
                                 Password = "xXx",
-                                Roles = new string[] {"sudo", "sa" }
+                                Roles = new string[] { "sudo", "sa" }
                             }
                          );
             _accounts.Add(
