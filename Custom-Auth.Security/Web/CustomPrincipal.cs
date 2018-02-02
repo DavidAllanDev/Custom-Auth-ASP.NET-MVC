@@ -1,22 +1,22 @@
 ﻿using System.Linq;
 using System.Security.Principal;
-using Custom_Auth.Web.Models;
+using Custom_Auth.Security.ModelInterface;
 
-namespace Custom_Auth.Web.Security
+namespace Custom_Auth.Security.Web
 {
     public class CustomPrincipal : IPrincipal
     {
-        private Account _account;
+        private IAccount _account;
 
 
-        public CustomPrincipal(Account account)
+        public CustomPrincipal(IAccount account)
         {
             _account = account;
 
             Identity = new GenericIdentity(account.UserName);
         }
 
-        public IIdentity Identity{ get; set; }
+        public IIdentity Identity { get; set; }
 
         public bool IsInRole(string role)
         {

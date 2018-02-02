@@ -1,6 +1,6 @@
 ﻿using System.Web;
 
-namespace Custom_Auth.Web.Security
+namespace Custom_Auth.Security.Web
 {
     public static class SessionPersister
     {
@@ -20,6 +20,5 @@ namespace Custom_Auth.Web.Security
 
             set => HttpContext.Current.Session[usernameSessionvar] = value;
         }
-
     }
 }

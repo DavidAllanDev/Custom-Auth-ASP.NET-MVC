@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Custom_Auth.Web.Models;
 using Custom_Auth.Web.ViewModels;
-using Custom_Auth.Web.Security;
+using Custom_Auth.Security.Web;
 
 namespace Custom_Auth.Web.Controllers
 {

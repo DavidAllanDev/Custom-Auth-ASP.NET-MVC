@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Custom_Auth.Security.ModelInterface;
 
 namespace Custom_Auth.Web.Models
 {
-    public class Account
+    public class Account : IAccount
     {
         [Display(Name = "User")]
         public string UserName { get; set; }
