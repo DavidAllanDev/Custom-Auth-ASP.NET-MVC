@@ -11,7 +11,10 @@ namespace Custom_Auth.Security.Web
             if (string.IsNullOrEmpty(SessionPersister.Username))
             {
                 filterContext.Result = new RedirectToRouteResult(
-                                                        new RouteValueDictionary(new { controller = "Account", action = "Index" })
+                                                        new RouteValueDictionary(new {
+                                                                                        controller = CustomSesstings.AccountController,
+                                                                                        action = CustomSesstings.AccountAction
+                                                                                })
                                                         );
             }
             else
@@ -20,7 +23,10 @@ namespace Custom_Auth.Security.Web
                 if (!customPrincipal.IsInRole(Roles))
                 {
                     filterContext.Result = new RedirectToRouteResult(
-                                                    new RouteValueDictionary(new { controller = "AccessDenied", action = "Index" })
+                                                    new RouteValueDictionary(new {
+                                                                                    controller = CustomSesstings.AccessDeniedController,
+                                                                                    action = CustomSesstings.AccessDeniedAction
+                                                                            })
                                                     );
                 }
             }

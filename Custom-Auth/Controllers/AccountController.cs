@@ -14,6 +14,11 @@ namespace Custom_Auth.Web.Controllers
         [HttpPost]
         public ActionResult Login(AccountViewModel avm)
         {
+            if (avm == null)
+            {
+                throw new ArgumentNullException(nameof(avm));
+            }
+
             Account account = avm.Account;
 
             if(String.IsNullOrEmpty(account.UserName) || String.IsNullOrEmpty(account.Password))
