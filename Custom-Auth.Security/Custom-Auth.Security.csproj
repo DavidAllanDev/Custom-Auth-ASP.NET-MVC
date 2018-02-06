@@ -33,6 +33,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\sb-admin-2.Template\ProjectTemplates\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,10 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModelInterface\IAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\CustomAuthorizeAttribute.cs" />
     <Compile Include="Web\CustomPrincipal.cs" />
     <Compile Include="Web\SessionPersister.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Custom-Auth.Interfaces\Custom-Auth.Interfaces.csproj">
+      <Project>{5fc51070-8ce3-435a-bcc3-fb515ecf82a0}</Project>
+      <Name>Custom-Auth.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Custom-Auth.Repository\Custom-Auth.Repository.csproj">
+      <Project>{cd16c784-1836-489b-98c9-4474bf522043}</Project>
+      <Name>Custom-Auth.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
