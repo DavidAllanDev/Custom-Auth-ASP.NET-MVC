@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Custom_Auth.Security.ModelInterface;
+using Custom_Auth.Interfaces.ModelInterface;
 
 namespace Custom_Auth.Domain.Model
 {

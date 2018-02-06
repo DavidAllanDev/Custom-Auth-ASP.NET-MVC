@@ -42,13 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Account.cs" />
-    <Compile Include="Model\AccountModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Custom-Auth.Security\Custom-Auth.Security.csproj">
-      <Project>{970791C9-7209-4807-9A5B-EEB5D59B333E}</Project>
-      <Name>Custom-Auth.Security</Name>
+    <ProjectReference Include="..\Custom-Auth.Interfaces\Custom-Auth.Interfaces.csproj">
+      <Project>{5fc51070-8ce3-435a-bcc3-fb515ecf82a0}</Project>
+      <Name>Custom-Auth.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
