@@ -149,7 +149,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Security\CustomAuthorizeAttribute.cs" />
     <Compile Include="ViewModels\AccountViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +210,10 @@
     <ProjectReference Include="..\Custom-Auth.Domain\Custom-Auth.Domain.csproj">
       <Project>{54194405-4948-4F26-8022-CE90C45E4609}</Project>
       <Name>Custom-Auth.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Custom-Auth.Repository\Custom-Auth.Repository.csproj">
+      <Project>{CD16C784-1836-489B-98C9-4474BF522043}</Project>
+      <Name>Custom-Auth.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\Custom-Auth.Security\Custom-Auth.Security.csproj">
       <Project>{970791C9-7209-4807-9A5B-EEB5D59B333E}</Project>

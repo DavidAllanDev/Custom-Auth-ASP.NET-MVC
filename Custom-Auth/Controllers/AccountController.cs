@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using Custom_Auth.Domain.Model;
 using Custom_Auth.Web.ViewModels;
 using Custom_Auth.Security.Web;
+using Custom_Auth.Repository;
 
 namespace Custom_Auth.Web.Controllers
 {
@@ -21,7 +22,7 @@ namespace Custom_Auth.Web.Controllers
                 return View("Index");
             }
 
-            if (!new AccountModel().IsAuthenticable(account.UserName, account.Password))
+            if (!Accounts.IsAuthenticable(account.UserName, account.Password))
             {
                 ViewBag.Error = "User or Password invalid²";
                 return View("Index");

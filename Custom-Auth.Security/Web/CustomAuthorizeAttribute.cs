@@ -1,15 +1,14 @@
 ﻿using System.Web.Routing;
 using System.Web.Mvc;
-using Custom_Auth.Security.Web;
-using Custom_Auth.Domain.Model;
+using Custom_Auth.Repository;
 
-namespace Custom_Auth.Web.Security
+namespace Custom_Auth.Security.Web
 {
     public class CustomAuthorizeAttribute : AuthorizeAttribute
     {
         public override void OnAuthorization(AuthorizationContext filterContext)
         {
-            if(string.IsNullOrEmpty(SessionPersister.Username))
+            if (string.IsNullOrEmpty(SessionPersister.Username))
             {
                 filterContext.Result = new RedirectToRouteResult(
                                                         new RouteValueDictionary(new { controller = "Account", action = "Index" })
@@ -17,9 +16,8 @@ namespace Custom_Auth.Web.Security
             }
             else
             {
-                AccountModel accountModel = new AccountModel();
-                CustomPrincipal customPrincipal = new CustomPrincipal(accountModel.FindByUserName(SessionPersister.Username));
-                if(!customPrincipal.IsInRole(Roles))
+                CustomPrincipal customPrincipal = new CustomPrincipal(Accounts.FindByUserName(SessionPersister.Username));
+                if (!customPrincipal.IsInRole(Roles))
                 {
                     filterContext.Result = new RedirectToRouteResult(
                                                     new RouteValueDictionary(new { controller = "AccessDenied", action = "Index" })
