@@ -30,7 +30,7 @@ namespace Custom_Auth.Repository
 
         public static List<IAccount> AccountList(string userName) => _accounts;
 
-        public static IAccount FindByUserName(string userName) => _accounts.Single(a => a.UserName.Equals(userName));
+        public static IAccount FindByUserName(string userName) => _accounts.FindAll(a => a.UserName.Equals(userName)).FirstOrDefault();
 
         public static bool IsAuthenticable(string userName, string password) => _accounts.Find(A => A.UserName.Equals(userName) && A.Password.Equals(password)) != null;
     }
