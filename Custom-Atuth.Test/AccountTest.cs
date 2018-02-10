@@ -1,5 +1,4 @@
-﻿using System;
-using Custom_Auth.Domain.Model;
+﻿using Custom_Auth.Domain.Model;
 using Custom_Auth.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
