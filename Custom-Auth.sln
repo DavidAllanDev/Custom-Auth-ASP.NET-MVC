@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom-Auth.Web", "Custom-Auth\Custom-Auth.Web.csproj", "{16AF3FBC-1F19-40B4-B775-34448F73F7FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom-Auth.Web", "Custom-Auth.Web\Custom-Auth.Web.csproj", "{16AF3FBC-1F19-40B4-B775-34448F73F7FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom-Auth.Security", "Custom-Auth.Security\Custom-Auth.Security.csproj", "{970791C9-7209-4807-9A5B-EEB5D59B333E}"
 EndProject
